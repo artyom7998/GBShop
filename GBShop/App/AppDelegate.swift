@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            auth.login(userName: "Somebody", password: "mypassword") { response in
                switch response.result {
                case .success(let login):
-              //  let user = login.user
+              //  let user = login.user // хотел присвоить для передачи ниже
                 print(login)
                case .failure(let error):
                 print(error.localizedDescription)
